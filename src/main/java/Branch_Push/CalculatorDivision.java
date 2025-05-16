@@ -13,13 +13,19 @@ public class CalculatorDivision {
         float sum=x/y+z;
         return sum;
     }
+
+    public void add(int x,int y){
+        int sum=x+y;
+        System.out.println("The sum of two numbers is: "+sum);
+    }
     public static void main(String[] args) {
 
         CalculatorDivision Cal=new CalculatorDivision();
          int x=Cal.div(5,2);
-         float y=Cal.div(20,2.50f,2.50f)  ;
-         System.out.println(x);
+         float y=Cal.div(20,2.50f,2.50f);
+         System.out.println("The division of two number is: "+x);
         System.out.println(y);
+        Cal.add(20,40);
 
     }
 }
