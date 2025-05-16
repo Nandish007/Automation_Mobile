@@ -4,7 +4,7 @@ public class SwapTwoNumbers {
     public static void main(String[] args) {
 
         int a=50,b=100;
-        System.out.println("Befer Swapping");
+        System.out.println("Before Swapping");
         System.out.println("a="+a);
         System.out.println("b="+b);
 
