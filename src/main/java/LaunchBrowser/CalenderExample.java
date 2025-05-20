@@ -23,9 +23,9 @@ public class CalenderExample {
 
         for (WebElement E : ele) {
             String text = E.getText();
-            if (text.equals("20")) {
+            if (text.equals("20"))
+            {
                 E.click();
-
             }
         }
     }
