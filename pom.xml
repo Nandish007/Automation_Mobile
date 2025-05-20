@@ -6,6 +6,10 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>WebTest</name>
     <description>Test the Web</description>
+    <properties>
+        <maven.compiler.source>24</maven.compiler.source>
+        <maven.compiler.target>24</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -104,8 +108,8 @@
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.9</source>
+                    <target>1.9</target>
                 </configuration>
             </plugin>
 
