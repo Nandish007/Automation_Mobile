@@ -52,5 +52,7 @@ public class FacebookLogin {
 
            driver.findElement(By.name("login")).click();
 
+           driver.close();
+
     }
 }
