@@ -11,7 +11,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class FacebookLogin {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
 
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\acer\\IdeaProjects\\Automation_Mobile\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -19,10 +19,6 @@ public class FacebookLogin {
         driver.manage().window().maximize();
 
         driver.get("https://www.facebook.com/");
-
-        TakesScreenshot TS= (TakesScreenshot)driver;
-        File file=TS.getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(file,new File("D:\\Screenshots\\Facebook.png"));
 
        driver.findElement(By.linkText("Create new account")).click();
 
@@ -43,6 +39,12 @@ public class FacebookLogin {
            driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Nandu@123");
 
            driver.findElement(By.xpath("//button[@type='submit']")).click();
+
+        TakesScreenshot TS= (TakesScreenshot)driver;
+        File file=TS.getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(file,new File("D:\\Screenshots\\Facebook.png"));
+
+           Thread.sleep(10000);
 
            driver.navigate().back();
 
