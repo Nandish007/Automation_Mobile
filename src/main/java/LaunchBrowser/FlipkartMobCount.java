@@ -33,9 +33,8 @@ public class FlipkartMobCount {
             {
                 System.out.println(C.getText());
             }
-        } catch (Exception e) {
+        } catch(Exception e) {
         }
-
             driver.findElement(By.xpath("//a[@class='_9QVEpD']")).click();
 
             List<WebElement> elementList= driver.findElements(By.className("KzDlHZ"));

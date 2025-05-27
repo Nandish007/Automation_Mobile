@@ -21,7 +21,8 @@ public class CalenderExample {
 
         List<WebElement> ele = driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']//td"));
 
-        for (WebElement E : ele) {
+        for (WebElement E : ele)
+        {
             String text = E.getText();
             if (text.equals("20"))
             {
