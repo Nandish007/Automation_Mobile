@@ -21,10 +21,10 @@ public class ReadProperties2 {
          String url= properties.getProperty("url");
 
          System.out.println(url);
-       /* System.setProperty("webdriver.chrome.driver", "C:\\Users\\acer\\IdeaProjects\\Automation_Mobile\\chromedriver.exe");
+         System.setProperty("webdriver.chrome.driver", "C:\\Users\\acer\\IdeaProjects\\Automation_Mobile\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
          driver.get("https://www.linkedin.com/");
-*/
 
     }
 }

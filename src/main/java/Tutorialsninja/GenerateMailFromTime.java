@@ -2,7 +2,7 @@ package Tutorialsninja;
 
 import java.util.Date;
 
-public class TimeToGenerateMail {
+public class GenerateMailFromTime {
 
     public static void main(String[] args) {
 
